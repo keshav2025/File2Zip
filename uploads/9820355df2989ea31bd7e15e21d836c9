@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Theme</title>
+
+    <link rel="shortcut icon" href="salesqueen logo.jpeg" type="image/x-icon">
+    <!--Bootstrap 5 CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/Bootstrap5/css/bootstrap.css" />
+
+    <!--Bootstrap 5 JS--->
+    <script type="text/javascript" src="../../assets/Bootstrap5/js/bootstrap.bundle.min.js"></script>
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/de952d599f.js" crossorigin="anonymous"></script>
+
+    <!--datatables CSS--->
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/datatables/css/buttons.dataTables.min.css" />
+
+    <!--Datatables js-->
+    <script type="text/javascript" src="../../assets/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./datatable/datatable.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.responsive.min.js"></script>
+
+    <!--Datatable dropdown----->
+    <script type="text/javascript" src="../../assets/js/datatables.pdfmake.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.vfs_fonts.js"></script>
+    <script type="text/javascript" src="../../assets/js/datatables.jszip.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="../../assets/js/buttons.print.min.js"></script>
+
+    <!--Dropdown select-->
+    <link rel="stylesheet" href="../../assets/Bootstrap5/css/bootstrap-select.min.css" />
+    <script src="../../assets/Bootstrap5/js/bootstrap-select.min.js"></script>
+
+    <!--summernote_textarea-->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+    <!-- CSS -->
+    <!-- validation -->
+    <script src="https://Login.loyalwings.com/assets/js/formValidation.min.js"></script>
+    <script src="https://Login.loyalwings.com/assets/js/bootstrap_validation.min.js"></script>
+
+    <link rel="stylesheet" href="../../assets/css/theme.css" />
+
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css">
+
+
+
+
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <!-- MultidateTime picker -->
+    <link rel="stylesheet" href="../../assets/datatables/css/dataTables.dateTime.min.css" />
+    <script src="../../assets/js/dataTables.dateTime.min.js"></script>
+    <!-- <script src="../../assets/js/moment.min.js"></script> -->
+
+    <!-- Include Required Prerequisites -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" /> -->
+
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+
+<style>
+.dataTables_filter input[type="search"] {
+    width:110px ! important;
+    
+    margin-left: 1210px; 
+}
+.dataTables_filter bottons[]
+ .buttonColor{
+ 
+  margin-left: 20px ! important; 
+  background-color: #28b8da !important;
+ }
+
+ 
+ .checkinButton{
+background-color: #28b8da !important;
+margin-left:20px;
+ }
+  .BulkButton{
+   
+    background-color:red ! important;
+ }
+ .checkinButtonRed{
+  background-color:red !important;
+  margin-left:19px;
+ }
+  .multiselector{
+  margin-left:1040px;
+  width:300px;
+  margin-top:-140px;
+ }
+
+
+
+</style>
+</head>
+
+
+<body class="card"  onload="addDate();">
+<div class="card">
+   <div  >
+   <h3 >Lisenses managements</h3> <hr>
+   
+   </div>
+
+        
+
+        <div >
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-9 qarow mgbttn">
+                        <div class="button_su">
+                            <span class="su_button_circle">
+                            </span>
+                            <button type="button" class="hrbtns buttonColor contractbtn addbttn"
+                                onclick="showModal('modal.html','Add Order')"> <span class="button_text_container">
+                                     Add
+                                </span></button>
+                        </div>
+                        <div class="button_su">
+                            <span class="su_button_circle">
+                            </span>
+                            <button type="button" class="hrbtns BulkButton contractbtn addbttn"
+                                onclick="showModal('warehouseModal.html','Add warehouse')"> <span
+                                    class="button_text_container">
+                                    BULK UPLOAD
+                                </span></button>
+                        </div>
+
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div  class="row">
+
+
+            <div class=" card col-md-12 me-3" id="first_col">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12" id="first_col">
+                            <div class="demo-html mt-0">
+                  <div class="">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="demo-html mt-0">
+                       <div class="row">
+                               <div class="col-md-3  multiselector">
+    <label for="unitname" class="purchaseinfo Manufacturer mb-1">Manufacturer</label>
+    <div class="purchasegrp">
+        <div class="dropdown-with-icon dropdownalignment">
+            <select class="selectpicker form-control" name="currency" multiple data-actions-box="false" data-live-search="true" title="None Selected">
+                <option value="36" data-subtext="GHS">HP</option>
+                <option value="38" data-subtext="MAD">Toyota</option>
+                <option value="41" data-subtext="¢">Nxtm</option>
+                <option value="41" data-subtext="¢">Blackmagic</option>
+                <option value="41" data-subtext="¢">DJI</option>
+                <option value="41" data-subtext="¢">Bally</option>
+                <option value="36" data-subtext="GHS">HP</option>
+                <option value="38" data-subtext="MAD">Toyota</option>
+                <option value="41" data-subtext="¢">Nxtm</option>
+                <option value="41" data-subtext="¢">Blackmagic</option>
+                <option value="41" data-subtext="¢">DJI</option>
+                <option value="41" data-subtext="¢">Bally</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+                       
+                        <table class="example display dataTable display responsive nowrap tblalign table borderless" style="width: 100%" id="example" aria-describedby="example_info">
+                            <thead class="theadrow">
+                                    <tr>
+                                       
+                                        
+                                       
+                                        <th>
+                                            ID
+                                        </th>
+                                        <th>
+                                           Licenses
+                                        </th>
+                                        <th>
+                                           Product key
+                                        </th>
+
+                                        <th>
+                                          Expiration date
+                                        </th>
+                                        <th>
+                                           Licensed to emai
+                                        </th>
+                                        <th>
+                                           Licensed to name
+                                        </th>
+                                        <th>
+                                          Manufacturer
+                                        </th>
+                                        <th>Total	</th>
+
+                                        <th>Avail</th>
+                                        <th>Checkin/Check-out</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="row-hover">
+                                        <td class="progtble">01</td>
+                                        <td>Photoshopjjjjj</td>
+                                        <td class="hrtble1 ">85cfe8a2-d481-3e0c- 
+                                        <p>8384-d2952cbed6bb
+                                            </td></P>
+                                        <td>2022-07-31</td>
+                                        <td>ari26@example.com	 </td>
+                                        <td>
+                                           Miguel Kunde
+                                        </td>
+                                        <td>NxtM</td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                      <td>
+    <button type="submit" class="hrbtns contractbtn checkinButton itemgrnbtn " aria-label="Download Sample">CHECKIN </button>
+</td>
+
+ <tr class="row-hover">
+                                        <td class="progtble">01</td>
+                                        <td>Photoshopjjjjj</td>
+                                        <td class="hrtble1 ">85cfe8a2-d481-3e0c- 
+                                        <p>8384-d2952cbed6bb
+                                            </td></P>
+                                        <td>2022-07-31</td>
+                                        <td>ari26@example.com	 </td>
+                                        <td>
+                                           Miguel Kunde
+                                        </td>
+                                        <td>NxtM</td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                      <td>
+    <button type="submit" class="hrbtns contractbtn checkinButtonRed itemgrnbtn " aria-label="Download Sample">CHECKIN OUT  </button>
+</td>
+
+ <tr class="row-hover">
+                                        <td class="progtble">01</td>
+                                        <td>Photoshopjjjjj</td>
+                                        <td class="hrtble1 ">85cfe8a2-d481-3e0c- 
+                                        <p>8384-d2952cbed6bb
+                                            </td></P>
+                                        <td>2022-07-31</td>
+                                        <td>ari26@example.com	 </td>
+                                        <td>
+                                           Miguel Kunde
+                                        </td>
+                                        <td>NxtM</td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                      <td>
+    <button type="submit" class="hrbtns contractbtn checkinButtonRed itemgrnbtn " aria-label="Download Sample">CHECKIN OUT </button>
+</td>
+
+
+                     </tbody>
+                        </table>
+       
+    <!-- modal  -->
+    <div class="modal fade" id="modal_md" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header hdrbg">
+                    <button type="button" class="btn-close closebtn" data-bs-dismiss="modal"></button>
+                    <!-- <h5 class="modal-title"></h5> -->
+                    <h5 class="fnt_head">
+
+                        <b class="modal-title"></b>
+                        <div class="vertical-line">
+
+                            <span class="Bcgtop capsule"></span>
+                            <span class="Bcgbttm capsule"></span>
+                        </div>
+                    </h5>
+                </div>
+                <div class="modal-body mbdclr">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- modal -->
+    <script>
+        function showModal(url, title) {
+            $('#modal_md').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md .modal-title').html(title);
+                    $('#modal_md .modal-body').html(response);
+                }
+            });
+        }
+    </script>
+    <script>
+        function openTab(evt, tabName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        var carousel = document.getElementById("carouselExampleIndicators");
+
+        carousel.addEventListener("slid.bs.carousel", function (event) {
+            var activeSlideIndex = event.to;
+            if (activeSlideIndex === 0) {
+
+                openTab(event, 'general');
+
+            }
+            else if (activeSlideIndex === 1) {
+
+                openTab(event, 'billing');
+
+            }
+            else if (activeSlideIndex === 2) {
+
+                openTab(event, 'custom');
+
+            }
+        });
+
+
+
+    </script>
+    <!--upload-files-->
+
+    <script>
+        const dropZone = document.querySelector('#drop-zone');
+        const inputElement = document.querySelector('#myfile');
+        const img = document.querySelector('img');
+        const p = document.querySelector('.dropfile');
+        const fileNameElement = document.querySelector('.file-name');
+        const deleteButton = document.querySelector('#deleteBtn');
+
+        inputElement.addEventListener('change', function (e) {
+            const file = this.files[0];
+            if (file) {
+                img.style.display = "block";
+                p.style.display = 'none';
+                fileNameElement.textContent = file.name;
+                deleteButton.style.display = 'inline-block';
+
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onloadend = function () {
+                    const src = this.result;
+                    img.src = src;
+                    img.alt = file.name;
+                }
+            }
+        });
+
+        dropZone.addEventListener('click', () => inputElement.click());
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            img.style.display = "block";
+            const file = e.dataTransfer.files[0];
+            // p.style.display = 'none';
+
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onloadend = function () {
+                e.preventDefault();
+                p.style.display = 'none';
+                fileNameElement.textContent = file.name;
+                deleteButton.style.display = 'inline-block';
+
+                const src = this.result;
+                img.src = src;
+                img.alt = file.name;
+            }
+        });
+
+        deleteButton.addEventListener('click', () => {
+            img.src = '';
+            img.style.display = 'none';
+            p.style.display = 'block';
+            fileNameElement.textContent = '';
+            deleteButton.style.display = 'none';
+            inputElement.value = '';
+        });
+    </script>
+    <!-- summernote -->
+    <script>
+        $('#summernote').summernote({
+            placeholder: '',
+            tabsize: 2,
+            height: 100
+        });
+    </script>
+    <!-- DATATABLE -->
+    <script>
+        $(document).ready(function () {
+            var table = $('.example').DataTable({
+
+                rowReorder: {
+                    selector: 'td:nth-child(2)'
+                },
+                language: { lengthMenu: '_MENU_', search: '', searchPlaceholder: " Search..."   },
+                responsive: true,
+                dom: 'Blfrtip',
+
+                buttons: [
+                    {
+
+                    },
+
+                     {
+                        text: '<i class="fa-solid fa-arrow-right-from-bracket"></i> EXPORT',
+                        extend: 'collection',
+                       className: 'export-button',
+                        buttons: [
+                         
+                            
+                            {
+                                text: '<i class="fa-regular fa-file-excel icn me-2 excel-icon"></i> Excel',
+                                extend: 'excel',
+
+                            },
+                            {
+                                text: '<i class="fa-regular fa-file-lines icn me-2 csv-icon"></i> CSV',
+                                extend: 'csv',
+                            },
+                            {
+                                text: '<i class="fa-regular fa-file-pdf icn me-2 pdf-icon"></i> PDF',
+                                extend: 'pdf'
+                            },
+                            {
+                                text: '<i class="fa-solid fa-print me-2 icn print-icon"></i> PRINT',
+                                extend: 'print'
+                            },
+                        ],
+                        className: 'myname'
+
+                    },
+
+                    {
+                        text: '<i class="fa-solid fa-arrow-rotate-right p-1" style="font-size:.9rem"></i>'
+                    }
+                    
+                   
+
+                ],
+
+
+            })
+
+        });
+        function checkAll() {
+            checkbox = document.getElementById("all_check");
+            if (checkbox.checked == true) {
+                $('.single_check').prop("checked", true);
+                $('.bulk_send').show(1000);
+            } else {
+                $('.single_check').prop("checked", false);
+                $('.bulk_send').hide(1000);
+            }
+        }
+        function singleCheck(id) {
+            checkbox = document.getElementById("check_" + id);
+            boxes = document.getElementsByClassName("single_check");
+
+
+            if (checkbox.checked == true) {
+                $('.bulk_send').show(1000);
+            } else {
+                count = 0;
+                for (let i = 0; i < boxes.length; i++) {
+                    if (boxes[i].checked == true) {
+                        count += 1;
+                    }
+                }
+                if (count == 0) {
+                    $('.bulk_send').hide(1000);
+                    $('#all_check').prop("checked", false);
+                } else {
+                    $('.bulk_send').show();
+                }
+            }
+        }
+
+        $(document).ready(function () {
+            const single_checks = document.querySelectorAll('.single_check');
+            const rows = document.querySelectorAll('table.dataTable tbody tr');
+            single_checks.forEach((singleCheck) => {
+                singleCheck.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    singleCheck.checked = false;
+                })
+                singleCheck.addEventListener('dblclick', (e) => {
+                    e.stopPropagation();
+                    singleCheck.checked = true;
+
+                })
+            })
+            rows.forEach((row) => {
+
+                row.addEventListener('dblclick', () => {
+                    if (row.firstElementChild.children[0].checked == false) {
+                        row.firstElementChild.children[0].checked = true
+                    } else {
+                        row.firstElementChild.children[0].checked = false
+
+                    }
+                })
+            })
+
+        })
+
+
+    </script>
+
+    <script>
+        new DataTable('.example', {
+            columnDefs: [
+                {
+                    orderable: false,
+                    className: 'select-checkbox',
+                    targets: 0
+                }
+            ],
+            select: {
+                style: 'os',
+                selector: 'td:first-child'
+            },
+            order: [[1, 'asc']]
+        });
+    </script>
+    <script>
+        function toggleRowBackground(checkbox) {
+            var row = checkbox.closest('tr');
+            row.classList.toggle('selected');
+        }
+    </script>
+    <!--Multiselect-->
+    <script>
+        const dropdowns = document.querySelectorAll('.multiselect');
+
+        dropdowns.forEach(dropdown => {
+            const inputBox = document.createElement('input');
+            inputBox.type = 'hidden';
+            inputBox.classList.add('selected-values');
+            name = dropdown.getAttribute('data-name');
+            inputBox.setAttribute("name", name);
+            dropdown.after(inputBox);
+
+            dropdown.addEventListener('change', () => {
+                const selectedOptions = Array.from(dropdown.selectedOptions).map(option => option.value);
+                inputBox.value = selectedOptions.join(', ');
+            });
+        });
+    </script>
+    <!-- script for toggle table -->
+
+    <script>
+        function togg() {
+            var hidden_columns = [4, 5, 6, 7];
+            var _visible = true;
+            if ($("#first_col").hasClass("col-md-12")) {
+                $("#first_col").removeClass("col-md-12").addClass("col-md-5");
+                _visible = false;
+                $("#sec_col").show();
+                $("#toggle_btn")
+                    .find("i")
+                    .removeClass("fa fa-angle-double-left")
+                    .addClass("fa fa-angle-double-right");
+            } else {
+                $("#first_col").removeClass("col-md-5").addClass("col-md-12");
+                $("#sec_col").hide();
+                $("#toggle_btn")
+                    .find("i")
+                    .removeClass("fa fa-angle-double-right")
+                    .addClass("fa fa-angle-double-left");
+            }
+            var _table = $("#example").DataTable();
+            // Show hide hidden columns
+            _table.columns(hidden_columns).visible(_visible, true);
+            _table.columns.adjust();
+        }
+    </script>
+    <script>
+        $("#toggle_btn").click(function () {
+            var hidden_columns = [4, 5, 6, 7];
+            var _visible = true;
+            if ($("#first_col").hasClass("col-md-12")) {
+                $("#first_col").removeClass("col-md-12").addClass("col-md-5");
+                _visible = false;
+                $("#sec_col").show();
+                $("#toggle_btn")
+                    .find("i")
+                    .removeClass("fa fa-angle-double-left")
+                    .addClass("fa fa-angle-double-right");
+            } else {
+                $("#first_col").removeClass("col-md-5").addClass("col-md-12");
+                $("#sec_col").hide();
+                $("#toggle_btn")
+                    .find("i")
+                    .removeClass("fa fa-angle-double-right")
+                    .addClass("fa fa-angle-double-left");
+            }
+            var _table = $("#example").DataTable();
+            // Show hide hidden columns
+            _table.columns(hidden_columns).visible(_visible, true);
+            _table.columns.adjust();
+        });
+
+        // script for expand button
+        $("#expandbtn").click(function () {
+            if ($("#sec_col").hasClass("col-md-7")) {
+                $("#sec_col").removeClass("col-md-7").addClass("col-md-12");
+                $("#first_col").hide();
+            } else {
+                $("#sec_col").removeClass("col-md-12").addClass("col-md-7");
+                $("#first_col").show();
+            }
+        });
+
+
+        // view toggle for show contract
+        $(".viewbtn").click(function () {
+            var hidden_columns = [4, 5];
+            var _visible = false;
+            if ($("#first_col").hasClass("col-md-12")) {
+                $("#first_col").removeClass("col-md-12").addClass("col-md-5");
+                $("#sec_col").show();
+                $("#toggle_btn")
+                    .find("i")
+                    .removeClass("fa fa-angle-double-left")
+                    .addClass("fa fa-angle-double-right");
+
+
+            }
+            var _table = $("#example").DataTable();
+            // Show hide hidden columns
+            _table.columns(hidden_columns).visible(_visible, true);
+            _table.columns.adjust();
+
+            $("#showcontent").show();
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#myMultiselect').select2({
+                tags: true,
+                tokenSeparators: [',', ' '], // Allows entering multiple values separated by commas or spaces
+            });
+        });
+    </script>
+    <!--  Auto show today's date -->
+   
+
+   
+    
+    <!-- tooltip -->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <!-- table dropdown -->
+
+
+    <script>
+        var dropdownToggles = document.querySelectorAll("#stbutton");
+
+        dropdownToggles.forEach(function (dropdownToggle) {
+            var dropdownMenu = dropdownToggle.nextElementSibling;
+
+            dropdownMenu.addEventListener("click", function (event) {
+                event.preventDefault();
+                var selectedOption = event.target.textContent;
+
+                dropdownToggle.textContent = selectedOption;
+
+                dropdownToggle.classList.remove("await", "testing", "notselected", "complete");
+                if (selectedOption === "Not Started") {
+                    dropdownToggle.classList.add("notselected");
+                } else if (selectedOption === "Awaiting Feedback") {
+                    dropdownToggle.classList.add("await");
+                } else if (selectedOption === "Testing") {
+                    dropdownToggle.classList.add("testing");
+                } else if (selectedOption === "Complete") {
+                    dropdownToggle.classList.add("complete");
+                } else {
+                    dropdownToggle.classList.remove("await", "testing", "notselected", "complete");
+                }
+            });
+            dropdownToggle.addEventListener("click", function () {
+                var selectedOption = dropdownToggle.textContent.trim();
+                dropdownMenu.innerHTML = "";
+                if (selectedOption === "In Progress") {
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Not Started</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Testing</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Awaiting Feedback</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Complete</a></li>';
+                } else if (selectedOption === "Not Started") {
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">In Progress</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Testing</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Awaiting Feedback</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Complete</a></li>';
+                } else if (selectedOption === "Testing") {
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">In Progress</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Not Started</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Awaiting Feedback</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Complete</a></li>';
+                } else if (selectedOption === "Awaiting Feedback") {
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">In Progress</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Not Started</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Testing</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Complete</a></li>';
+                } else if (selectedOption === "Complete") {
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">In Progress</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Not Started</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Awaiting Feedback</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Awaiting Feedback</a></li>';
+                }
+            });
+        });
+    </script>
+    <script>
+        function changeButton() {
+            const selectBox = document.getElementById("statusSelect");
+            const selectedOption = selectBox.options[selectBox.selectedIndex];
+            const button = document.getElementById("statusButton");
+            // Update button text
+            button.innerText = selectedOption.text;
+            // Reset border and text colors
+            button.style.border = "";
+            button.style.color = "";
+            // Apply specific styles based on selected option value
+            if (selectedOption.value === "Testing") {
+                button.style.border = "2px solid black";
+                button.style.color = "black";
+                button.style.backgroundColor = "black";
+            } else if (selectedOption.value === "Awaiting Feedback") {
+                button.style.border = "2px solid green";
+                button.style.color = "green";
+                button.style.backgroundColor = "green";
+            } else if (selectedOption.value === "Complete") {
+                button.style.border = "2px solid red";
+                button.style.color = "red";
+                button.style.backgroundColor = "red";
+            }
+        }
+    </script>
+
+    <!-- Test Modal  -->
+    <!-- <script>
+        const tds = document.querySelectorAll('.example tbody tr td:nth-child(3) ');
+        tds.forEach((td) => {
+            td.addEventListener('click', () => { showModal('./testmodal.html', 'Test modal') })
+        });
+    </script> -->
+
+    <!-- multi date picker -->
+
+    <!-- <script type="text/javascript">
+            $(document).ready(function () {
+                const example_wrapper = document.getElementById('example_wrapper')
+                example_wrapper.insertAdjacentHTML('afterbegin', '<input type="text" name="daterange" value="01/01/2015 - 01/31/2015" />')
+            });
+            $(function () {
+                $('input[name="daterange"]').daterangepicker();
+            });
+        </script> -->
+    
+
+
+
+
+
+
+    <script>
+        const ths = document.querySelectorAll('table.dataTable.display thead tr th');
+        ths.forEach((th) => {
+
+            th.addEventListener('click', () => {
+                th.style.backgroundColor = "rgba(237, 236, 236, 0.995)";
+
+            })
+
+        })
+    </script>
+    <script>
+        const threeDots = document.querySelectorAll('.dropdown button');
+        const dropdownLis = document.querySelectorAll('.dropdown ul li');
+        const dropdownMenu = document.querySelector('.dropdown-menu.show');
+        threeDots.forEach((threeDot) => {
+
+            threeDot.addEventListener('click', (e) => {
+                e.stopPropagation();
+            })
+        })
+        dropdownLis.forEach((li) => {
+
+            li.addEventListener('click', (e) => { e.stopPropagation(); })
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            const td = document.querySelector('table.dataTable.display tbody tr td');
+            const table = document.querySelector('table.dataTable.display  ');
+            // const options = document.querySelectorAll('.dataTables_wrapper .dataTables_length select option');
+            if ($('table.dataTable.display tbody tr').length < 2) {
+                if (td.innerHTML == 'No data available in table') {
+                    table.insertAdjacentHTML('afterend', `<div style="width:100%;display:flex;justify-content:center"> <img src="./404page.png" height="500vmin" width="500vmin"
+                            alt="three-dots" data-bs-toggle="tooltip" data-bs-title="more"
+                            data-bs-auto-close="outside"> </div>`)
+                }
+            }
+
+            // options.forEach((option) => {
+            //     console.log(option);
+            //     option.addEventListener('click', () => {
+            //         alert('hi')
+            //         option.style.color = 'red !important';
+            //     })
+            // })
+        });
+    </script>
+
+    <!--  Bubble hover effect -->
+    <script>
+        $(".button_su_inner").mouseenter(function (e) {
+            var parentOffset = $(this).offset();
+
+            var relX = e.pageX - parentOffset.left;
+            var relY = e.pageY - parentOffset.top;
+            $(this).prev(".su_button_circle").css({ "left": relX, "top": relY });
+            $(this).prev(".su_button_circle").removeClass("desplode-circle");
+            $(this).prev(".su_button_circle").addClass("explode-circle");
+
+        });
+
+        $(".button_su_inner").mouseleave(function (e) {
+
+            var parentOffset = $(this).offset();
+
+            var relX = e.pageX - parentOffset.left;
+            var relY = e.pageY - parentOffset.top;
+            $(this).prev(".su_button_circle").css({ "left": relX, "top": relY });
+            $(this).prev(".su_button_circle").removeClass("explode-circle");
+            $(this).prev(".su_button_circle").addClass("desplode-circle");
+
+        });
+    </script>
+
+   
+
+
+
+    <script>
+        // const modal = document.querySelector('.modal')
+        window.addEventListener('keydown', (e) => {
+
+            if (e.key == "Escape") {
+                $("#modal_md").modal('hide');
+            }
+        })
+    </script>
+
+
+    <!-- NEW DRAG AND DROP SCRIPT -->
+    <script>
+        var isAdvancedUpload = (function () {
+            var div = document.createElement("div");
+            return (
+                ("draggable" in div || ("ondragstart" in div && "ondrop" in div)) &&
+                "FormData" in window &&
+                "FileReader" in window
+            );
+        })();
+
+        let fileInput = document.querySelector(".default-file-input");
+        let uploadButton = document.querySelector(".upload-button");
+        let uploadedFilesContainer = document.querySelector(".upload-files-container");
+        let overlay = document.getElementById("overlay");
+        let dragFileArea = document.querySelector(".drag-file-area");
+        let dragCounter = 0;
+
+        function showOverlay() {
+            overlay.style.display = "flex";
+            overlay.style.flexDirection = "column";
+        }
+
+        function hideOverlay() {
+            overlay.style.display = "none";
+        }
+
+        ["dragenter", "dragover", "dragleave", "drop"].forEach((eventName) => {
+            window.addEventListener(
+                eventName,
+                function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                },
+                false
+            );
+        });
+
+        window.addEventListener("dragenter", function (e) {
+            dragCounter++;
+            showOverlay();
+        });
+
+        window.addEventListener("dragleave", function (e) {
+            dragCounter--;
+            if (dragCounter === 0) {
+                hideOverlay();
+            }
+        });
+
+        window.addEventListener("drop", function (e) {
+            dragCounter = 0;
+            hideOverlay();
+            processFiles(e.dataTransfer.files);
+        });
+
+        fileInput.addEventListener("change", function () {
+            processFiles(fileInput.files);
+        });
+
+        dragFileArea.addEventListener("click", () => {
+            let input = document.createElement("input");
+            input.type = "file";
+            input.onchange = (_this) => {
+                let files = Array.from(input.files);
+                processFiles(files);
+            };
+            input.click();
+        });
+
+        let allFiles = []; // Array to store all files
+
+        function processFiles(files) {
+            Array.from(files).forEach((file) => {
+                allFiles.push(file); // Add new file to the array
+                processFile(file);
+            });
+        }
+
+        function processFile(file) {
+            let fileBlock = document.createElement("div");
+            fileBlock.className = "file-block";
+            fileBlock.style.display = "flex";
+            fileBlock.innerHTML = `
+    <div class="file-info">
+        <span class="material-icons-outlined file-icon">description</span>
+        <span class="file-name">${file.name}</span>
+        <span class="file-size badge rounded-pill">${(file.size / 1024).toFixed(
+                1
+            )} KB</span>
+    </div>
+    <span class="material-icons remove-file-icon" onclick="removeFile(this)">delete</span>
+    <div class="progress-bar" style="width: 0; height: 5px; bottom: 0; position: absolute;"></div>`;
+            uploadedFilesContainer.appendChild(fileBlock);
+        }
+
+        window.removeFile = function (element) {
+            let fileName = element
+                .closest(".file-block")
+                .querySelector(".file-name").textContent;
+            allFiles = allFiles.filter((file) => file.name !== fileName); // Remove file from the array
+            element.closest(".file-block").remove();
+        };
+
+        uploadButton.addEventListener("click", function () {
+            // Remove the behavior that opens the file input
+            // Instead, call the function to start uploading files
+            uploadFiles();
+        });
+
+        window.addEventListener("paste", function (e) {
+            const items = (e.clipboardData || e.originalEvent.clipboardData).items;
+            let files = [];
+            for (let item of items) {
+                if (item.kind === "file") {
+                    let file = item.getAsFile();
+                    files.push(file);
+                }
+            }
+            if (files.length > 0) {
+                processFiles(files);
+            }
+        });
+
+        // Function to simulate the upload process
+        function uploadFiles() {
+            let fileBlocks = uploadedFilesContainer.querySelectorAll(".file-block");
+            fileBlocks.forEach((block) => {
+                // Simulate file upload progress
+                let progressBar = block.querySelector(".progress-bar");
+                let width = 0;
+                let intervalId = setInterval(() => {
+                    if (width >= 100) {
+                        clearInterval(intervalId);
+                        progressBar.style.width = "100%";
+                    } else {
+                        width++;
+                        progressBar.style.width = width + "%";
+                    }
+                }, 50);
+            });
+        }
+
+        // Trigger the upload process when the upload button is clicked
+        uploadButton.addEventListener("click", function () {
+            // Assuming all files are ready to upload, for example purposes
+            uploadFiles();
+        });
+
+        // Add a click event listener to the cancel (X) button to hide the upload message
+        document
+            .querySelector(".cancel-alert-button")
+            .addEventListener("click", function () {
+                document.querySelector(".cannot-upload-message").style.display = "none";
+            });
+
+    </script>
+
+    <!-- modal -->
+    <script>
+        function showModal(url, title) {
+            $('#modal_md').on('shown.bs.modal', function () {
+                $('.selectpicker').selectpicker('refresh');
+            });
+            $('#modal_md').modal('show', { backdrop: 'true' });
+            $.ajax({
+                url: url,
+                success: function (response) {
+                    $('#modal_md .modal-title').html(title);
+                    $('#modal_md .modal-body').html(response);
+                }
+            });
+        }
+    </script>
+    <!-- for filter button -->
+    <script>
+        $(document).ready(function () {
+            $(document).on('click', '.dropdown-item', function () {
+                $(this).toggleClass('active');
+
+            })
+            $("ul#one>li:first-child").click(function () {
+                $('ul#one>li:first-child ~ li a').removeClass('active');
+            })
+            $("ul#one>li:first-child ~ li").click(function () {
+                $('ul#one>li:first-child a').removeClass('active');
+            })
+
+        })
+    </script>
+
+  
+    <!-- append -->
+    <script>
+        $(document).ready(function () {
+            var el1 = '<div class="col-lg-4 parent  mt-4"><div class="purchasegrps"><label class="">Attachment</label><div class="dropdown-with-icon"><input type="file" id="" name="file" class="form-control purchaseselect jobchse frm-exc-fle" value=""><button type="button" class="_delete image-plus select-container" style="background-color: #fc2d42;"><span class="input-group-addon"><i class="bi bi-dash-lg plus-green" style="background-color: #fc2d42;"></i></span></button></div></div></div>';
+            $("#addplusbtn").click(function () {
+                $("#parentbox").append(el1);
+            })
+            $(document).on('click', '._delete', function () {
+                $(this).closest('.parent').remove();
+            })
+        })
+    </script>
+    <script>$(document).ready(function () {
+            $("#add_btn").click(function () {
+                $("#parent").append('<div id="coldiv" class="row"><div class="col-md-3 "><div class="purchasegrp"><div class=" dropdown-with-icon dropdownalignment"><div class=" dropdown-with-icon dropdownalignment" style="border-radius:4px 0px 0px 4px;"><select class="selectpicker form-control" data-live-search="true" title="None selected" ><option value="0">Description</option><option value="1">Amount</option></select> </div></div></div> </div><div class="col-md-1"><div class="purchasegrp"><button id="remove_btn" name="add" style="background-color: #fc2d42;" class="ctctgrnbtn  banking-min-btn " data-ticket="true" type="button"><i class="fa-solid fa-minus"></i></button></div></div> </div>');
+                $('.selectpicker').selectpicker('reresh')
+            });
+            $(document).on('click', '#remove_btn', function () {
+                $(this).closest('#coldiv').remove();
+            });
+        });
+    </script>
+    <script>
+        var el5 = '<div class="row parent"><div class="col-4"><div class="purchasegrps"> <input type="text" id="" class="form-control purchaseselects" placeholder="Enter asset name"></div></div><div class="col-2 pt-2"><button onclick="erase2()" class="minusbtns setmartp erase"><i class="fa fa-minus"></i></button></div></div>';
+        function appen() {
+            $("#pbox").append(el5);
+        }
+        $(document).on('click', '.erase', function () {
+            $(this).closest("div.parent").remove();
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#add_btn2").click(function () {
+                $("#parent2").append('<div class="row"><div id="coldiv" class="col-md-4"><div class="purchasegrp"><label for="group" class="purchaseinfo mb-1"><span class="aster">* </span>Groups</label> <div class=" dropdown-with-icon dropdownalignment"><div class=" dropdown-with-icon dropdownalignment" style="border-radius:4px 0px 0px 4px;"><select name="group" class="form-control selectpicker " data-live-search="true"><option value=""></option><option value="0">Filtered Oil</option><option value="1">Assunzione sales</option><option value="2">Track Itinerary Leads</option></select><button id="remove_btn" name="add" style="background-color: #fc2d42;" class="ctctgrnbtn  banking-min-btn " data-ticket="true" type="button"><i class="fa-solid fa-minus"></i></button></div></div></div></div></div>');
+            });
+            $(document).on('click', '#remove_btn', function () {
+                $(this).closest('#coldiv').remove();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            var el1 = '<div class="col-lg-4 parent  "><div class="purchasegrps"><label class="">Attachment</label><div class="dropdown-with-icon"><input type="file" id="" name="file" class="form-control purchaseselect jobchse frm-exc-fle" value=""><button type="button" class="_delete image-plus select-container" style="background-color: #fc2d42;"><span class="input-group-addon"><i class="bi bi-dash-lg plus-green" style="background-color: #fc2d42;"></i></span></button></div></div></div>';
+            $("#add_btn1").click(function () {
+                $("#parent1").append(el1);
+            })
+            $(document).on('click', '._delete', function () {
+                $(this).closest('.parent').remove();
+            })
+        })
+    </script>
+
+    <!-- summernote -->
+   
+
+    <!-- table dropdown -->
+    <script>
+        var dropdownToggles = document.querySelectorAll("#stbutton");
+
+        dropdownToggles.forEach(function (dropdownToggle) {
+            var dropdownMenu = dropdownToggle.nextElementSibling;
+
+            dropdownMenu.addEventListener("click", function (event) {
+                var selectedOption = event.target.textContent;
+
+                dropdownToggle.textContent = selectedOption;
+
+                dropdownToggle.classList.remove("await", "testing", "notselected", "complete");
+                if (selectedOption === "Not Started") {
+                    dropdownToggle.classList.add("notselected");
+                } else if (selectedOption === "Awaiting Feedback") {
+                    dropdownToggle.classList.add("await");
+                } else if (selectedOption === "Testing") {
+                    dropdownToggle.classList.add("testing");
+                } else if (selectedOption === "Complete") {
+                    dropdownToggle.classList.add("complete");
+                } else {
+                    dropdownToggle.classList.remove("await", "testing", "notselected", "complete");
+                }
+            });
+            dropdownToggle.addEventListener("click", function () {
+                var selectedOption = dropdownToggle.textContent.trim();
+                dropdownMenu.innerHTML = "";
+                if (selectedOption === "In Progress") {
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Not Started</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Testing</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Awaiting Feedback</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Complete</a></li>';
+                } else if (selectedOption === "Not Started") {
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">In Progress</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Testing</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Awaiting Feedback</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Complete</a></li>';
+                } else if (selectedOption === "Testing") {
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">In Progress</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Not Started</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Awaiting Feedback</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Complete</a></li>';
+                } else if (selectedOption === "Awaiting Feedback") {
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">In Progress</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Not Started</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Testing</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Complete</a></li>';
+                } else if (selectedOption === "Complete") {
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">In Progress</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Not Started</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Awaiting Feedback</a></li>';
+                    dropdownMenu.innerHTML += '<li><a class="dropdown-item" href="#">Awaiting Feedback</a></li>';
+                }
+            });
+        });
+    </script>
+    
+    <script>
+        function opentab2(evt, tabName) {
+            var i, tabcontent1, tablinks2;
+            tabcontent1 = document.getElementsByClassName("tabcontent1");
+            for (i = 0; i < tabcontent1.length; i++) {
+                tabcontent1[i].style.display = "none";
+            }
+            tablinks2 = document.getElementsByClassName("tablinks2");
+            for (i = 0; i < tablinks2.length; i++) {
+                tablinks2[i].className = tablinks2[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Automatically open the first tab when the page loads
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementsByClassName("tablinks2")[0].click();
+        });
+
+
+    </script>
+    <script>
+        function toggleViews(id) {
+            $.ajax({
+                type: 'POST',
+                url: '<?= base_url() ?>/Crm/getUserstab/' + id,
+                dataType: 'json',
+                success: function (result) {
+                    $('#stripedtab').html(result);
+                }
+            });
+
+
+
+
+            var hidden_columns = [3, 4, 5, 7];
+            var _visible = false;
+            if ($("#first_col").hasClass("col-md-12")) {
+                $("#first_col").removeClass("col-md-12").addClass("col-md-4 pe-0");
+                // $("#first_col").removeClass("col-md-12").addClass("col-md-4");
+                $("#sec_col").show();
+
+            } else {
+                $("#first_col").removeClass("col-md-4 pe-0").addClass("col-md-12");
+                // $("#first_col").removeClass("col-md-4").addClass("col-md-12");
+                $("#sec_col").hide();
+                _visible = true;
+            }
+
+            var _table = $("#example").DataTable();
+            // Show hide hidden columns
+            _table.columns(hidden_columns).visible(_visible, true);
+            _table.columns.adjust();
+
+            $('#toggle_btn').on('click', function () {
+                // Assuming you have an ID to pass to the toggleView function, replace 'yourId' with the actual ID
+                var element = document.getElementById(ID);
+                if (event.target.checked) {
+                    element.style.display = "block";
+                } else {
+                    element.style.display = "none";
+                }
+
+
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>

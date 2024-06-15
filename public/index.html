@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File & Folder to ZIP Converter</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+           <h3>File2zip</h3>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Convert Files and Folders to ZIP</h1>
+            <button id="upload-files-btn">Upload Files</button>
+            <button id="upload-folders-btn">Upload Folders</button>
+        </section>
+        <section class="upload-section">
+            <input type="file" id="file-input" multiple style="display: none;">
+            <input type="file" id="folder-input" webkitdirectory directory style="display: none;">
+            <div id="progress"></div>
+            <div id="status"></div>
+            <input type="text" id="filename-input" placeholder="Enter file name" style="display: none;">
+            <button id="download-btn" style="display: none;">Download ZIP</button>
+            <button id="reset-btn" style="display: none;">Reset</button>
+        </section>
+        <section class="features">
+            <h2>Features</h2>
+            <p>Compress and convert your files and folders to ZIP format with ease.</p>
+        </section>
+        <section class="how-it-works">
+            <h2>How it Works</h2>
+            <p>Follow these simple steps to convert your files:</p>
+            <ol>
+                <li>Click on the appropriate upload button</li>
+                <li>Select your files or folders</li>
+                <li>Download the ZIP file</li>
+            </ol>
+        </section>
+        <section class="about-us">
+            <h2>About Us</h2>
+            <p>We are a team dedicated to making file compression easy and accessible.</p>
+        </section>
+        <section class="contact">
+           
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

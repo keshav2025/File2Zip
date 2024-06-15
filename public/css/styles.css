@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: #fff;
+ 
+}
+
+nav {
+  color: #fff;
+  margin-right: 2rem;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  bottom: 44px;
+  border: 2px solid rgb(141, 139, 139);
+  box-shadow: 10px 10px 10px rgb(171, 175, 173);
+  text-align: center;
+  padding: 1rem;
+  height: 500px;
+  background: #e9f2ef;
+}
+
+button {
+  padding: 1rem;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.upload-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+#download-btn,
+#reset-btn {
+  margin-left: 500px;
+}
+
+#progress,
+#status {
+  position: absolute;
+  bottom: 400px;
+  margin: 1rem 0;
+}
+
+#filename-input {
+  position: absolute;
+  bottom: 500px;
+  margin-left: 600px;
+
+}
+
+#reset-btn {
+
+  position: absolute;
+  bottom: 440px;
+  margin-left: 500px;
+}
+
+#download-btn {
+  position: absolute;
+  bottom: 440px;
+  margin-left: 640px;
+}
